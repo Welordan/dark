@@ -5,13 +5,13 @@ name: DarkUpdate
 author: Welordan
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: A generic Slimefun4-Addon
+description: Spacequest's official slimefun addon
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.welordan.darkupdate.DarkUpdate
 
 ## You can change this to link to your website or repository. You can also remove this line if you want to.
-website: https://github.com/TheBusyBiscuit/Slimefun4-Addon
+website: https://github.com/Welordan/dark
 
 ## This is required and marks Slimefun as a plugin dependency.
 depend: [Slimefun]
