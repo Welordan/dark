@@ -33,72 +33,72 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
 
         darkEssenceItem.register(this);
 
-        // Creating the dense essence item. TODO: Lore
-        SlimefunItemStack denseEssenceItemStack = new SlimefunItemStack("DENSE_ESSENCE", Material.BLAZE_ROD, "&6Dense Essence", "", "&cDense Essence...");
+        // Creating the dense essence item.
+        SlimefunItemStack denseEssenceItemStack = new SlimefunItemStack("DENSE_ESSENCE", Material.BLAZE_ROD, "&6Dense Essence", "", "&cDark Essence compressed into a solid ingot. Used in much better crafting recipes.");
         ItemStack[] denseEssenceRecipe = {null, null, null, null, null, null, null, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem denseEssenceItem = new SlimefunItem(category, denseEssenceItemStack, RecipeType.COMPRESSOR, denseEssenceRecipe);
+        SlimefunItem denseEssenceItem = new SlimefunItem(category, denseEssenceItemStack, RecipeType.PRESSURE_CHAMBER, denseEssenceRecipe);
 
         denseEssenceItem.register(this);
 
-        // Creating the element item. TODO: Lore
-        SlimefunItemStack elementItemStack = new SlimefunItemStack("ELEMENT", Material.PRISMARINE_SHARD, "&1Element", "", "&9");
+        // Creating the element item.
+        SlimefunItemStack elementItemStack = new SlimefunItemStack("ELEMENT_PIECE", Material.PRISMARINE_SHARD, "&1Element", "", "&9A malleable metal humming with energy. It is cold to the touch regardless of its actual temperature.");
         SlimefunItem elementItem = new SlimefunItem(category, elementItemStack, RecipeType.MOB_DROP, null);
 
         elementItem.register(this);
 
-        // Creating the essence infused iron helmet. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedIronHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_HELMET", Material.IRON_HELMET, "&4&lEssence Infused Iron Helmet", "", "&c");
+        // Creating the essence infused iron helmet.
+        SlimefunItemStack essenceInfusedIronHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_HELMET", Material.IRON_HELMET, "&4&lEssence Infused Iron Helmet", "", "&cIron helmet infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronHelmetRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_HELMET), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronHelmetItem = new SlimefunItem(category, essenceInfusedIronHelmetItemStack, RecipeType.COMPRESSOR, essenceInfusedIronHelmetRecipe);
+        SlimefunItem essenceInfusedIronHelmetItem = new SlimefunItem(category, essenceInfusedIronHelmetItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronHelmetRecipe);
 
         essenceInfusedIronHelmetItem.register(this);
 
-        // Creating the essence infused iron chestplate. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedIronChestplateItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_CHESTPLATE", Material.IRON_CHESTPLATE, "&4&lEssence Infused Iron Chestplate", "", "&c");
+        // Creating the essence infused iron chestplate.
+        SlimefunItemStack essenceInfusedIronChestplateItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_CHESTPLATE", Material.IRON_CHESTPLATE, "&4&lEssence Infused Iron Chestplate", "", "&cIron chestplate infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronChestplateRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_CHESTPLATE), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronChestplateItem = new SlimefunItem(category, essenceInfusedIronChestplateItemStack, RecipeType.COMPRESSOR, essenceInfusedIronChestplateRecipe);
+        SlimefunItem essenceInfusedIronChestplateItem = new SlimefunItem(category, essenceInfusedIronChestplateItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronChestplateRecipe);
 
         essenceInfusedIronChestplateItem.register(this);
 
-        // Creating the essence infused iron leggings. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedIronLeggingsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_LEGGINGS", Material.IRON_LEGGINGS, "&4&lEssence Infused Iron Chestplate", "", "&c");
+        // Creating the essence infused iron leggings.
+        SlimefunItemStack essenceInfusedIronLeggingsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_LEGGINGS", Material.IRON_LEGGINGS, "&4&lEssence Infused Iron Leggings", "", "&cIron leggings infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronLeggingsRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_LEGGINGS), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronLeggingsItem = new SlimefunItem(category, essenceInfusedIronLeggingsItemStack, RecipeType.COMPRESSOR, essenceInfusedIronLeggingsRecipe);
+        SlimefunItem essenceInfusedIronLeggingsItem = new SlimefunItem(category, essenceInfusedIronLeggingsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronLeggingsRecipe);
 
         essenceInfusedIronLeggingsItem.register(this);
 
-        // Creating the essence infused iron boots. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedIronBootsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_BOOTS", Material.IRON_BOOTS, "&4&lEssence Infused Iron Boots", "", "&c");
+        // Creating the essence infused iron boots.
+        SlimefunItemStack essenceInfusedIronBootsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_BOOTS", Material.IRON_BOOTS, "&4&lEssence Infused Iron Boots", "", "&Iron boots infused with the severed intelligence of a corrupted being. Slowly heals its wearer.c");
         ItemStack[] essenceInfusedIronBootsRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_BOOTS), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronBootsItem = new SlimefunItem(category, essenceInfusedIronBootsItemStack, RecipeType.COMPRESSOR, essenceInfusedIronBootsRecipe);
+        SlimefunItem essenceInfusedIronBootsItem = new SlimefunItem(category, essenceInfusedIronBootsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronBootsRecipe);
 
         essenceInfusedIronBootsItem.register(this);
 
-        // Creating the essence infused diamond helmet. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedDiamondHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_HELMET", Material.DIAMOND_HELMET, "&4&lEssence Infused Diamond Helmet", "", "&c");
+        // Creating the essence infused diamond helmet.
+        SlimefunItemStack essenceInfusedDiamondHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_HELMET", Material.DIAMOND_HELMET, "&4&lEssence Infused Diamond Helmet", "", "&cDiamond helmet infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondHelmetRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null,  new ItemStack(Material.DIAMOND_HELMET), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondHelmetItem = new SlimefunItem(category, essenceInfusedDiamondHelmetItemStack, RecipeType.COMPRESSOR, essenceInfusedDiamondHelmetRecipe);
+        SlimefunItem essenceInfusedDiamondHelmetItem = new SlimefunItem(category, essenceInfusedDiamondHelmetItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondHelmetRecipe);
 
         essenceInfusedDiamondHelmetItem.register(this);
 
-        // Creating the essence infused diamond chestplate. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedDiamondChestplateItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_CHESTPLATE", Material.DIAMOND_CHESTPLATE, "&4&lEssence Infused Diamond Chestplate", "", "&c");
+        // Creating the essence infused diamond chestplate.
+        SlimefunItemStack essenceInfusedDiamondChestplateItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_CHESTPLATE", Material.DIAMOND_CHESTPLATE, "&4&lEssence Infused Diamond Chestplate", "", "&cDiamond chestplate infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondChestplateRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null, new ItemStack(Material.DIAMOND_CHESTPLATE), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondChestplateItem = new SlimefunItem(category, essenceInfusedDiamondChestplateItemStack, RecipeType.COMPRESSOR, essenceInfusedDiamondChestplateRecipe);
+        SlimefunItem essenceInfusedDiamondChestplateItem = new SlimefunItem(category, essenceInfusedDiamondChestplateItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondChestplateRecipe);
 
         essenceInfusedDiamondChestplateItem.register(this);
 
-        // Creating the essence infused diamond leggings. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedDiamondLeggingsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_LEGGINGS", Material.DIAMOND_LEGGINGS, "&4&lEssence Infused Diamond Chestplate", "", "&c");
+        // Creating the essence infused diamond leggings.
+        SlimefunItemStack essenceInfusedDiamondLeggingsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_LEGGINGS", Material.DIAMOND_LEGGINGS, "&4&lEssence Infused Diamond Leggings", "", "&cDiamond leggings infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondLeggingsRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null, new ItemStack(Material.DIAMOND_LEGGINGS), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondLeggingsItem = new SlimefunItem(category, essenceInfusedDiamondLeggingsItemStack, RecipeType.COMPRESSOR, essenceInfusedDiamondLeggingsRecipe);
+        SlimefunItem essenceInfusedDiamondLeggingsItem = new SlimefunItem(category, essenceInfusedDiamondLeggingsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondLeggingsRecipe);
 
         essenceInfusedDiamondLeggingsItem.register(this);
 
-        // Creating the essence infused diamond boots. TODO: Lore & recipe type (I don't think this is made in a compressor)
-        SlimefunItemStack essenceInfusedDiamondBootsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_BOOTS", Material.DIAMOND_BOOTS, "&4&lEssence Infused Diamond Boots", "", "&c");
+        // Creating the essence infused diamond boots.
+        SlimefunItemStack essenceInfusedDiamondBootsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_BOOTS", Material.DIAMOND_BOOTS, "&4&lEssence Infused Diamond Boots", "", "&cDiamond boots infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondBootsRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null, new ItemStack(Material.DIAMOND_BOOTS), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondBootsItem = new SlimefunItem(category, essenceInfusedDiamondBootsItemStack, RecipeType.COMPRESSOR, essenceInfusedDiamondBootsRecipe);
+        SlimefunItem essenceInfusedDiamondBootsItem = new SlimefunItem(category, essenceInfusedDiamondBootsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondBootsRecipe);
 
         essenceInfusedDiamondBootsItem.register(this);
 
