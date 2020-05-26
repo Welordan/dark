@@ -1,4 +1,4 @@
-package me.CHANGEME.slimefunaddon;
+package me.welordan.darkupdate;
 
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -34,10 +34,10 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
 
         // Create a new Category
         // This Category will use this ItemStack
-        ItemStack categoryItem = new CustomItem(Material.DIAMOND, "&4Addon Category", "", "&a> Click to open");
+        ItemStack categoryItem = new CustomItem(Material.NETHER_STAR, "&4Dark Magic", "", "&a> Click to open");
 
         // Give your Category a unique id.
-        NamespacedKey categoryId = new NamespacedKey(this, "addon_category");
+        NamespacedKey categoryId = new NamespacedKey(this, "dark_category");
         Category category = new Category(categoryId, categoryItem);
 
         // Create a new Slimefun ItemStack
