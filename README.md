@@ -1,4 +1,4 @@
-# *Dark*
+# *SpaceQuests Dark Update*
 This is a repository for the Slimefun4 addon for the SpaceQuests **Dark Update**.
 Contains various items, tools, and armor from Àyrılmış.
 
