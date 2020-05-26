@@ -21,7 +21,7 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
         Config cfg = new Config(this);
 
         if (cfg.getBoolean("options.auto-update")) {
-            // You could start an Auto-Updater for example
+            
         }
 
         NamespacedKey categoryID = new NamespacedKey(this, "dark_category");
