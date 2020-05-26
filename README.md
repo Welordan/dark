@@ -1,6 +1,6 @@
-# *Dark*
-This is a repository for the Slimefun4 addon **Dark** for the SpaceQuests server.
-It consists of various magic items, tools and armor for endgame players.
+#
+This is a repository for the Slimefun4 addon for the SpaceQuests **Dark Update**.
+Contains various items, tools, and armor from Àyrılmış.
 
-Chat with the developers on [discord](https://discord.gg/m825cRm).
+Chat with the developers on [discord](https://discord.gg/gRDuSvv).
 
