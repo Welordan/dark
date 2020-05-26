@@ -49,56 +49,56 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
         // Creating the essence infused iron helmet.
         SlimefunItemStack essenceInfusedIronHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_HELMET", Material.IRON_HELMET, "&4&lEssence Infused Iron Helmet", "", "&cIron helmet infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronHelmetRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_HELMET), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronHelmetItem = new SlimefunItem(category, essenceInfusedIronHelmetItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronHelmetRecipe);
+        DarkArmor essenceInfusedIronHelmetItem = new DarkArmor(category, essenceInfusedIronHelmetItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronHelmetRecipe);
 
         essenceInfusedIronHelmetItem.register(this);
 
         // Creating the essence infused iron chestplate.
         SlimefunItemStack essenceInfusedIronChestplateItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_CHESTPLATE", Material.IRON_CHESTPLATE, "&4&lEssence Infused Iron Chestplate", "", "&cIron chestplate infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronChestplateRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_CHESTPLATE), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronChestplateItem = new SlimefunItem(category, essenceInfusedIronChestplateItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronChestplateRecipe);
+        DarkArmor essenceInfusedIronChestplateItem = new DarkArmor(category, essenceInfusedIronChestplateItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronChestplateRecipe);
 
         essenceInfusedIronChestplateItem.register(this);
 
         // Creating the essence infused iron leggings.
         SlimefunItemStack essenceInfusedIronLeggingsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_LEGGINGS", Material.IRON_LEGGINGS, "&4&lEssence Infused Iron Leggings", "", "&cIron leggings infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronLeggingsRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_LEGGINGS), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronLeggingsItem = new SlimefunItem(category, essenceInfusedIronLeggingsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronLeggingsRecipe);
+        DarkArmor essenceInfusedIronLeggingsItem = new DarkArmor(category, essenceInfusedIronLeggingsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronLeggingsRecipe);
 
         essenceInfusedIronLeggingsItem.register(this);
 
         // Creating the essence infused iron boots.
         SlimefunItemStack essenceInfusedIronBootsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_BOOTS", Material.IRON_BOOTS, "&4&lEssence Infused Iron Boots", "", "&Iron boots infused with the severed intelligence of a corrupted being. Slowly heals its wearer.c");
         ItemStack[] essenceInfusedIronBootsRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_BOOTS), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
-        SlimefunItem essenceInfusedIronBootsItem = new SlimefunItem(category, essenceInfusedIronBootsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronBootsRecipe);
+        DarkArmor essenceInfusedIronBootsItem = new DarkArmor(category, essenceInfusedIronBootsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedIronBootsRecipe);
 
         essenceInfusedIronBootsItem.register(this);
 
         // Creating the essence infused diamond helmet.
         SlimefunItemStack essenceInfusedDiamondHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_HELMET", Material.DIAMOND_HELMET, "&4&lEssence Infused Diamond Helmet", "", "&cDiamond helmet infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondHelmetRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null,  new ItemStack(Material.DIAMOND_HELMET), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondHelmetItem = new SlimefunItem(category, essenceInfusedDiamondHelmetItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondHelmetRecipe);
+        DarkArmor essenceInfusedDiamondHelmetItem = new DarkArmor(category, essenceInfusedDiamondHelmetItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondHelmetRecipe);
 
         essenceInfusedDiamondHelmetItem.register(this);
 
         // Creating the essence infused diamond chestplate.
         SlimefunItemStack essenceInfusedDiamondChestplateItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_CHESTPLATE", Material.DIAMOND_CHESTPLATE, "&4&lEssence Infused Diamond Chestplate", "", "&cDiamond chestplate infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondChestplateRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null, new ItemStack(Material.DIAMOND_CHESTPLATE), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondChestplateItem = new SlimefunItem(category, essenceInfusedDiamondChestplateItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondChestplateRecipe);
+        DarkArmor essenceInfusedDiamondChestplateItem = new DarkArmor(category, essenceInfusedDiamondChestplateItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondChestplateRecipe);
 
         essenceInfusedDiamondChestplateItem.register(this);
 
         // Creating the essence infused diamond leggings.
         SlimefunItemStack essenceInfusedDiamondLeggingsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_LEGGINGS", Material.DIAMOND_LEGGINGS, "&4&lEssence Infused Diamond Leggings", "", "&cDiamond leggings infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondLeggingsRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null, new ItemStack(Material.DIAMOND_LEGGINGS), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondLeggingsItem = new SlimefunItem(category, essenceInfusedDiamondLeggingsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondLeggingsRecipe);
+        DarkArmor essenceInfusedDiamondLeggingsItem = new DarkArmor(category, essenceInfusedDiamondLeggingsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondLeggingsRecipe);
 
         essenceInfusedDiamondLeggingsItem.register(this);
 
         // Creating the essence infused diamond boots.
         SlimefunItemStack essenceInfusedDiamondBootsItemStack = new SlimefunItemStack("ESSENCE_INFUSED_DIAMOND_BOOTS", Material.DIAMOND_BOOTS, "&4&lEssence Infused Diamond Boots", "", "&cDiamond boots infused with the compressed souls of corrupted beings. Slowly heals its wearer.");
         ItemStack[] essenceInfusedDiamondBootsRecipe = {denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack, null, new ItemStack(Material.DIAMOND_BOOTS), null, denseEssenceItemStack, denseEssenceItemStack, denseEssenceItemStack};
-        SlimefunItem essenceInfusedDiamondBootsItem = new SlimefunItem(category, essenceInfusedDiamondBootsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondBootsRecipe);
+        DarkArmor essenceInfusedDiamondBootsItem = new DarkArmor(category, essenceInfusedDiamondBootsItemStack, RecipeType.MAGIC_WORKBENCH, essenceInfusedDiamondBootsRecipe);
 
         essenceInfusedDiamondBootsItem.register(this);
 
