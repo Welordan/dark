@@ -34,14 +34,14 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
         darkEssenceItem.register(this);
 
         // Creating the dense essence item.
-        SlimefunItemStack denseEssenceItemStack = new SlimefunItemStack("DENSE_ESSENCE", Material.BLAZE_ROD, "&6Dense Essence", "", "&cDark Essence compressed into a solid ingot. Used in much better crafting recipes.");
+        SlimefunItemStack denseEssenceItemStack = new SlimefunItemStack("DENSE_ESSENCE", Material.BLAZE_ROD, "&6Dense Essence", "", "&cDark Essence compressed into a solid ingot. Used in much better crafting recipes...");
         ItemStack[] denseEssenceRecipe = {null, null, null, null, null, null, null, darkEssenceItemStack, darkEssenceItemStack};
         SlimefunItem denseEssenceItem = new SlimefunItem(category, denseEssenceItemStack, RecipeType.PRESSURE_CHAMBER, denseEssenceRecipe);
 
         denseEssenceItem.register(this);
 
         // Creating the element item.
-        SlimefunItemStack elementItemStack = new SlimefunItemStack("ELEMENT_PIECE", Material.PRISMARINE_SHARD, "&1Element", "", "&9A malleable metal humming with energy. It is cold to the touch regardless of its actual temperature.");
+        SlimefunItemStack elementItemStack = new SlimefunItemStack("ELEMENT_PIECE", Material.PRISMARINE_SHARD, "&1Element", "", "&9A malleable metal humming with energy. It is cold to the touch regardless of its actual temperature...");
         SlimefunItem elementItem = new SlimefunItem(category, elementItemStack, RecipeType.MOB_DROP, null);
 
         elementItem.register(this);
