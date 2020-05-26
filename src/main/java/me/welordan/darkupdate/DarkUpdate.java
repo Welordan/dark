@@ -22,7 +22,7 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
         Config cfg = new Config(this);
 
         if (cfg.getBoolean("options.auto-update")) {
-            // You could start an Auto-Updater for example
+
         }
 
         // Creating the category
@@ -43,9 +43,6 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
         SlimefunItem denseEssenceItem = new SlimefunItem(category, denseEssenceItemStack, RecipeType.COMPRESSOR, denseEssenceRecipe);
 
         denseEssenceItem.register(this);
-
-
-
     }
 
     @Override
