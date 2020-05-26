@@ -1,5 +1,6 @@
 package me.welordan.darkupdate;
 
+import me.mrCookieSlime.Slimefun.Lists.SlimefunItems;
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
 import org.bukkit.inventory.ItemStack;
@@ -24,12 +25,26 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
             // You could start an Auto-Updater for example
         }
 
+        // Creating the category
         NamespacedKey categoryID = new NamespacedKey(this, "dark_category");
         CustomItem categoryItem = new CustomItem(Material.NETHER_STAR, "&4Dark Magic", "", "&a> Click to open");
 
         Category category = new Category(categoryID, categoryItem);
 
-        
+        // Creating the dark essence item.
+        SlimefunItemStack darkEssenceItemStack = new SlimefunItemStack("DARK_ESSENCE", Material.BLAZE_POWDER, "&6Dark Essence", "", "&cThe severed intelligence of a corrupted being. Dissolves when touched. Used for crafting recipes...");
+        SlimefunItem darkEssenceItem = new SlimefunItem(category, darkEssenceItemStack, RecipeType.MOB_DROP, null);
+
+        darkEssenceItem.register(this);
+
+        // Creating the dense essence item.
+        SlimefunItemStack denseEssenceItemStack = new SlimefunItemStack("DENSE_ESSENCE", Material.BLAZE_ROD, "&6Dense Essence", "", "&cDense Essence...");
+        ItemStack[] denseEssenceRecipe = {null, null, null, null, null, null, null, darkEssenceItemStack, darkEssenceItemStack};
+        SlimefunItem denseEssenceItem = new SlimefunItem(category, denseEssenceItemStack, RecipeType.COMPRESSOR, denseEssenceRecipe);
+
+        denseEssenceItem.register(this);
+
+
 
     }
 
