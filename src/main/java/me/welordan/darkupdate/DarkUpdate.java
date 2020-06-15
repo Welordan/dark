@@ -41,11 +41,17 @@ public class DarkUpdate extends JavaPlugin implements SlimefunAddon {
         denseEssenceItem.register(this);
 
         // Creating the element item.
-        SlimefunItemStack elementItemStack = new SlimefunItemStack("ELEMENT_PIECE", Material.PRISMARINE_SHARD, "&1Element", "", "&9A malleable metal humming with energy. It is cold to the touch regardless of its actual temperature...");
+        SlimefunItemStack elementItemStack = new SlimefunItemStack("ELEMENT_PIECE", Material.PRISMARINE_SHARD, "&1&lElement", "", "&9A malleable metal humming with energy. It is cold to the touch regardless of its actual temperature...");
         SlimefunItem elementItem = new SlimefunItem(category, elementItemStack, RecipeType.MOB_DROP, null);
 
         elementItem.register(this);
+        
+        // Creating the element shard item.
+        SlimefunItemStack elementShardItemStack = new SlimefunItemStack("ELEMENT_SHARD", Material.PRISMARINE_CRYSTALS, "&1&lElement Shard", "", "&9A malleable metal humming with energy. It is cold to the touch regardless of its actual temperature...");
+        SlimefunItem elementShardItem = new SlimefunItem(category, elementShardItemStack, RecipeType.MOB_DROP, null);
 
+        elementShardItem.register(this);
+        
         // Creating the essence infused iron helmet.
         SlimefunItemStack essenceInfusedIronHelmetItemStack = new SlimefunItemStack("ESSENCE_INFUSED_IRON_HELMET", Material.IRON_HELMET, "&4&lEssence Infused Iron Helmet", "", "&cIron helmet infused with the severed intelligence of a corrupted being. Slowly heals its wearer.");
         ItemStack[] essenceInfusedIronHelmetRecipe = {darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, new ItemStack(Material.IRON_HELMET), darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack, darkEssenceItemStack};
